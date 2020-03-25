@@ -116,7 +116,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 0;
 }
 
 .two-columns__paragraph {
@@ -125,8 +124,8 @@
   font-size: 24px;
 }
 
-.two-columns__paragraph_margins30 {
-  margin: 30px 0;
+.paragraph-interval {
+  height: 30px;
 }
 
 .two-columns__span-accent {
@@ -183,6 +182,7 @@
 
 .feinman {
   margin-top: 100px;
+  padding-top: 20px;
   height: 790px;
   position: relative;
   background-color: #f2f2f2;
@@ -218,7 +218,7 @@
   color: black;
 }
 
-.feinman_background {
+.feinman__background {
   width: 867px;
   height: 637px;
   background-size: contain;
@@ -283,64 +283,72 @@
   width: 90%;
   margin: 60px auto 40px;
   min-height: 250px;
-  flex-basis: 711px;
   display: flex;
   justify-content: space-between;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo_place_footer {
   background-image: url(../images/logo_white.svg);
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 1;
 }
 
-.footer__columns_content_copyright {
-  width: 50%;
+.footer__column_content_copyright {
   position: relative;
+  flex-basis: 711px;
+  justify-content: space-between;
 }
 
-.footer__columns_content_info {
-  width: 13%;
+.footer__column_content_info {
+  
 }
 
-.footer__columns_content_social {
-  width: 13%;
+.footer__column_content_social {
+
 }
 
 .footer__author {
   color: white;
-  height: 18px;
-  position: absolute;
-  left: 0;
-  bottom: 18px;
   line-height: 25px;
   font-size: 18px;
+  margin-bottom: 18px;
 }
 
-.footer__column_heading {
+.footer__column-heading {
+  margin: 0 0 20px;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
-.footer__column_links {
+.footer__column-link {
   display: flex;
   flex-direction: column;
   line-height: 30px;
   font-size: 18px;
-  margin-bottom: 16px;
 }
 
-.no-decoration {
-  text-decoration: none;
+.footer__list-item {
   color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer__list-item:hover {
+  color: #2F80ED;
+  cursor: pointer;
 }
 
 .footer__social-icon {
   width: 16px;
   margin-right: 10px;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
 }
