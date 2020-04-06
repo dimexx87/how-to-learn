@@ -14,13 +14,13 @@
 <body class="page">
 
   <header class="header">
-    <div class="logo logo__place_header"></div>
+    <div class="logo logo_place_header"></div>
     <h1 class="header__title">Научиться учиться</h1>
     <p class="header__subtitle">
       Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
       <a href="#techniques" class="header__link">Узнать &rarr;</a>
     </p>
-    <img src="./images/two_again.png" alt="опять двойка" class="header__main-illustration">
+    <img src="/images/two_again.png" alt="опять двойка" class="header__main-illustration">
     <div class="header__square-pic"></div>
   </header>
 
@@ -54,33 +54,33 @@
       <div class="cards">
         <div class="cards__item">
           <img src="./images/two-types-of-attention.png" alt="изображение книги" class="cards__image">
-          <div class="cards__title">Два вида внимания</div>
-          <div class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
-            мышление.</div>
+          <h2 class="cards__title">Два вида внимания</h2>
+          <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
+            мышление.</p>
         </div>
         <div class="cards__item">
           <img src="./images/recall.png" alt="изображение статуи" class="cards__image">
-          <div class="cards__title">Recall</div>
-          <div class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.
-          </div>
+          <h2 class="cards__title">Recall</h2>
+          <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.
+          </p>
         </div>
         <div class="cards__item">
           <img src="./images/interliving.png" alt="изображение вокзала" class="cards__image">
-          <div class="cards__title">Интерливинг</div>
-          <div class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</div>
+          <h2 class="cards__title">Интерливинг</h2>
+          <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
         </div>
         <div class="cards__item">
           <img src="./images/questions.png" alt="изображение человека в центре белого помещения" class="cards__image">
-          <div class="cards__title">Вопросы</div>
-          <div class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно
-            волнует.</div>
+          <h2 class="cards__title">Вопросы</h2>
+          <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно
+            волнует.</p>
         </div>
         <div class="cards__item">
           <img src="./images/illusion-of-competence.png" alt="изображение человека в центре белого помещения"
             class="cards__image">
-          <div class="cards__title">Иллюзия компетентности</div>
-          <div class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы
-            владеете новой темой.</div>
+          <h2 class="cards__title">Иллюзия компетентности</h2>
+          <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы
+            владеете новой темой.</p>
         </div>
       </div>
     </section>
@@ -89,12 +89,8 @@
       <h2 class="section-title">Видео нa TED</h2>
       <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
       <div class="video__iframes">
-        <div class="video__iframe">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video__iframe">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen class="video__iframe"></iframe>
+        <iframe src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen class="video__iframe"></iframe>
       </div>
     </section>
 
@@ -229,13 +225,24 @@
     <section class="resources">
       <h2 class="section-title">Полезные ресурсы</h2>
       <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-      <div class="resources__logo-zone">
-        <a href="https://arzamas.academy/" target="_blank" class="resources__link"><img src="./images/logo/arzamas.svg" alt="изображение логотипа академии Полка" class="resources__logo"></a>
-        <a href="https://nplus1.ru/" target="_blank" class="resources__link"><img src="./images/logo/n1.svg" alt="изображение логотипа N+1" class="resources__logo"></a>
-        <a href="https://strelka.com/" target="_blank" class="resources__link"><img src="./images/logo/strelka.svg" alt="изображение логотипа института Стрелка" class="resources__logo"></a>
-        <a href="https://polka.academy/" target="_blank" class="resources__link"><img src="./images/logo/polka.svg"
-            alt="изображение логотипа академии Полка" class="resources__logo"></a>
-      </div>
+      <ul class="resources__logo-zone">
+        <li class="resources__link"><a href="https://arzamas.academy/" target="_blank"><img src="./images/logo/arzamas.svg" alt="изображение логотипа академии Полка" class="resources__logo"></a></li>
+        <li class="resources__link">
+          <a href="https://nplus1.ru/" target="_blank">
+            <img src="./images/logo/n1.svg" alt="изображение логотипа N+1" class="resources__logo">
+          </a>
+        </li>
+        <li class="resources__link">
+          <a href="https://strelka.com/" target="_blank">
+            <img src="./images/logo/strelka.svg" alt="изображение логотипа института Стрелка" class="resources__logo">
+          </a>
+        </li>
+        <li class="resources__link">
+          <a href="https://polka.academy/" target="_blank">
+            <img src="./images/logo/polka.svg" alt="изображение логотипа академии Полка" class="resources__logo">
+          </a>
+        </li>
+      </ul>
 
     </section>
 
@@ -243,7 +250,7 @@
   <footer class="footer">
     <div class="footer__columns">
       <div class="footer__column footer__column_content_copyright">
-        <div class="logo logo__place_footer"></div>
+        <div class="logo logo_place_footer"></div>
         <p class="footer__author">&copy; 2020. Гибадуллин Дмитрий</p>
       </div>
       <nav class="footer__column footer__column_content_info">
